@@ -1,0 +1,91 @@
+.spacer {
+  aspect-ratio: 960/550;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.tittle {
+  position: relative;
+  left: 24%;
+  top: 10%;
+}
+
+.infoSection {
+  position: absolute;
+  width: 534px;
+  height: 321px;
+  left: 60%;
+  top: 120%;
+}
+
+
+
+.tittle2 {
+  position: relative;
+  
+  top: 90%;
+
+}
+
+.info {
+  position: relative;
+  top: 100%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 137.9%;
+  /* or 26px */
+  letter-spacing: 0.05em;
+  
+  color: #4E4C46;
+  
+  
+}
+
+.btns {
+  position: relative;
+  top: 110%;
+  font-family: 'Rubik';
+}
+
+.btns button {
+  color: white;
+  background-color: #124C5F;
+  margin: 0rem 1rem;
+  padding: 1rem;
+}
+
+/* left-img */
+.bubble2 {
+  position: relative;
+  width: 761.17px;
+  height: 750.73px;
+  left: 20%;
+  bottom: 4%;
+
+}
+
+.vector {
+  position: relative;
+  left: -2.08%;
+  right: 62.89%;
+  top: 25.14%;
+  bottom: 63.94%;
+  transform: rotate(-10.68deg);
+
+}
+
+.dog {
+
+  position: relative;
+  bottom: 50%;
+  right: 5%;
+
+}
+
+

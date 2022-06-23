@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Karla&family=Pangolin&display=swap');
+
+.spacer {
+    aspect-ratio: 960/550;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.firstText {
+
+    position: absolute;
+    width: 506px;
+    height: 352px;
+    left: 20%;
+    top: 262px;
+
+    /* font-family: 'Karla', sans-serif; */
+
+    /* font-family: 'Pangolin', cursive; */
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.secondText {
+    /* Distribuidora de Productos veterinarios */
+    margin-top: 1rem;
+    position: absolute;
+    width: 419px;
+    height: 83px;
+    left: 20%;
+    top: 396px;
+
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 137.9%;
+    /* or 33px */
+    letter-spacing: 0.05em;
+
+    color: #181817;
+
+}
+
+.myBtn {
+    /* Rectangle 6 */
+    color: white;
+    position: absolute;
+    width: 192.69px;
+    height: 59.6px;
+    left: 20%;
+    top: 494px;
+    margin-top: 3rem;
+
+    background: #124C5F;
+    border-radius: 5px;
+
+}
+
+.myBtn:hover {
+    color: rgb(184, 184, 184);
+}
+
+.layer1 {
+    background-image: url("/static/Vector1.svg");
+}
+
+.bubble {
+    position: relative;
+    left: 55.27%;
+    right: 13.13%;
+    top: 11.13%;
+    bottom: 10.08%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.homeImg {
+    position: absolute;
+    left: -0.8%;
+    bottom: -7.1%;
+}
+
