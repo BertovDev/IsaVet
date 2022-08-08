@@ -54,7 +54,6 @@ export default function About() {
             scrollTrigger: {
                 trigger: infoRef.current,
                 start: "top center",
-                markers:true,
             },
             duration: 2,
             x: 100,

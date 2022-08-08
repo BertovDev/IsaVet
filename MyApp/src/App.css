@@ -202,7 +202,12 @@ h6 {
 
 @media (max-width:600px) {
 
-  html,body {
+  html {
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+  }
+  
+  body {
     overflow-x: hidden;
   }
 
