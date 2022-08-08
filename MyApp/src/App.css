@@ -1,91 +1,233 @@
-.spacer {
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Karla&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/************ Default Css ************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+/* HOME */
+.banner {
   aspect-ratio: 960/550;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-
-.tittle {
-  position: relative;
-  left: 24%;
-  top: 10%;
-}
-
-.infoSection {
-  position: absolute;
-  width: 534px;
-  height: 321px;
-  left: 60%;
-  top: 120%;
-}
-
-
-
-.tittle2 {
-  position: relative;
-  
-  top: 90%;
+  background-image: url("../static/Vector1.svg");
+  visibility: hidden;
 
 }
 
-.info {
-  position: relative;
-  top: 100%;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 137.9%;
-  /* or 26px */
-  letter-spacing: 0.05em;
-  
-  color: #4E4C46;
-  
-  
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
 }
 
-.btns {
-  position: relative;
-  top: 110%;
-  font-family: 'Rubik';
+.banner p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
 }
 
-.btns button {
+.banner button {
+
   color: white;
-  background-color: #124C5F;
-  margin: 0rem 1rem;
-  padding: 1rem;
+  font-size: 20px;
+  margin-top: 25px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(18, 76, 95);
+  border-radius: 5px;
+  width: 192.69px;
+  height: 59.6px;
 }
 
-/* left-img */
-.bubble2 {
-  position: relative;
-  width: 761.17px;
-  height: 750.73px;
-  left: 20%;
-  bottom: 4%;
-
-}
-
-.vector {
-  position: relative;
-  left: -2.08%;
-  right: 62.89%;
-  top: 25.14%;
-  bottom: 63.94%;
-  transform: rotate(-10.68deg);
-
-}
-
-.dog {
-
-  position: relative;
-  bottom: 50%;
-  right: 5%;
-
+.home-txt span {
+  font-size: 30px;
 }
 
 
+/* ABOUT */
+
+.center-in-section {
+  padding-top: 150px !important;
+
+}
+
+.bg-blob {
+
+  background-color: #E8F6F8;
+  border-radius: 15%;
+  padding: 80px;
+  box-shadow: 0px 5px 5px 5px rgb(18, 76, 95, 0.2);
+}
+
+.aboutSection {
+  aspect-ratio: 960/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 215px -1px;
+  background-image: url("../static/Vector.png");
+  /* background-size:70%; */
+  background-size: contain;
+  visibility: hidden;
+}
+
+
+.aboutSection h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 80px;
+  display: block;
+}
+
+
+.aboutSection p {
+  margin-top: 15px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.info span {
+  color:#124C5F;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.myBtn {
+
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  letter-spacing: 0.8px;
+  align-items: center;
+  justify-content: center;
+  background: #124C5F;
+  border-radius: 5px;
+  width: 192.69px;
+  height: 59.6px;
+}
+
+
+
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.item span {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Contact */
+
+.contactSection {
+  margin-top: 55px;
+  aspect-ratio: 960/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../static/wave.png");
+
+}
+
+.contactSection img {
+  width: 50%;
+}
+
+.wordContainer {
+  overflow: hidden;
+}
+
+/* Then, set the transform */
+.word {
+  transform: translateY(115%);
+}
+
+
+@media (max-width:600px) {
+  .aboutSection {
+    background-position: 0px 100px;
+    width: 110%;
+  }
+
+  .aboutSection p {
+    font-size: 1rem;
+  }
+
+  .info span {
+    font-size: 1.2rem;
+  }
+
+  .aboutSection h1 {
+    font-size: 50px;
+  }
+
+  .isavet_contact_logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ver_mas_button{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .about_buttons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider {
+    margin-left: 3rem;
+  }
+}
