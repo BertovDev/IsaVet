@@ -59,7 +59,6 @@ export default function About() {
             x: 100,
             ease: Power3.easeOut,
             opacity: 0,
-            delay: .8,
             stagger: .5
         }, .1)
 
