@@ -53,7 +53,8 @@ export default function About() {
         gsap.from([h1, h3, p, buttons], {
             scrollTrigger: {
                 trigger: infoRef.current,
-                start: "top center"
+                start: "top center",
+                markers:true,
             },
             duration: 2,
             x: 100,

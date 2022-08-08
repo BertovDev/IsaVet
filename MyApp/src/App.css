@@ -14,6 +14,8 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
+    -webkit-transform:translateZ(0);
+     transform:translateZ(0);
 }
 
 html {
@@ -23,9 +25,10 @@ html {
 
 body {
   font-weight: 400;
-  overflow-x: hidden;
   position: relative;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+
 }
 
 h1,
@@ -202,10 +205,6 @@ h6 {
 
 
 @media (max-width:600px) {
-
-  html,body {
-    overflow-x: hidden;
-  }
 
   .aboutSection {
     background-position: 0px 100px;
