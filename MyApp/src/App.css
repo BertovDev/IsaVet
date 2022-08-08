@@ -202,6 +202,11 @@ h6 {
 
 
 @media (max-width:600px) {
+
+  html,body {
+    overflow-x: hidden;
+  }
+
   .aboutSection {
     background-position: 0px 100px;
     width: 110%;
