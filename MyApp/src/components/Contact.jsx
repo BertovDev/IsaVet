@@ -1,4 +1,4 @@
-import React,{ useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { Col, Container, Row, Form, Modal } from 'react-bootstrap'
 import emailjs from "emailjs-com"
 
@@ -7,11 +7,11 @@ import "../App.css"
 import isaVetImg from "/static/logo.jpeg"
 
 // Icons
-import { useState } from 'react'
+import { Facebook, Instagram } from 'react-bootstrap-icons'
 
 export default function Contact() {
 
-    const [show,setShow] = useState(false)
+    const [show, setShow] = useState(false)
 
     const form = useRef();
 
@@ -129,16 +129,26 @@ export default function Contact() {
 
                     </Col>
                 </Row>
-                {/* <Row className='d-flex text-center justify-content-center mt-5'>
+                <Row className='d-flex text-center justify-content-center mt-5 border-top border-secondary'>
+
+                    <Col size={12} md={12} className="my-3">
+                        <a style={{ margin: "10px" }} href='https://www.facebook.com/isavetinsumos' target="_blank"><Facebook size={30} /></a>
+                        <a style={{ margin: "10px" }} href='https://www.instagram.com/isavet.ins/?hl=es' target="_blank"><Instagram size={30} /></a>
+                    </Col>
+                    <Col size={12} md={3} className="my-2">
+                        Buenos Aires, Argentina
+                    </Col>
+                    <Col size={12} md={3} className="my-2">
+                        Email: isavet.ins@gmail.com
+                    </Col>
+                    <Col size={12} md={3} className="my-2">
+                        Tel: +54 11 6143-9997
+                    </Col>
+       
                     <Col size={12} md={12}>
                         <h5>Isavet &reg; {new Date().getFullYear()}</h5>
                     </Col>
-                    <Col size={12} md={12} className="mt-2">
-                        <a className='btn' href='https://www.facebook.com/isavetinsumos' target="_blank"><Facebook size={30} /></a>
-                        <a className='btn' href='https://www.instagram.com/isavet.ins/?hl=es' target="_blank"><Instagram size={30} /></a>
-                    </Col>
-
-                </Row> */}
+                </Row>
             </Container >
         </section >
     )
