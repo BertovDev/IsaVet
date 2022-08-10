@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row, Card } from 'react-bootstrap'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -13,7 +13,7 @@ import comida from "/static/index.jpeg"
 import img2 from "/static/index2.jpeg"
 
 // Icons
-import { Bag, Envelope } from 'react-bootstrap-icons';
+import { Bag, Envelope, CheckCircleFill } from 'react-bootstrap-icons';
 
 
 export default function About() {
@@ -48,9 +48,8 @@ export default function About() {
         const h1 = infoRef.current.firstChild
         const h3 = infoRef.current.children[1]
         const p = infoRef.current.children[2]
-        const buttons = infoRef.current.lastChild
 
-        gsap.from([h1, h3, p, buttons], {
+        gsap.from([h1, h3, p], {
             scrollTrigger: {
                 trigger: infoRef.current,
                 start: "top center",
@@ -61,21 +60,22 @@ export default function About() {
             opacity: 0,
             stagger: .5
         }, .1)
-
-
-
     })
 
     return (
+
         <section id='about' className='aboutSection' ref={el => ref = el}>
             <Container className='center-in-section'>
-                <Row className='align-items-center'>
+                <Row className='align-items-center text-center'>
+                    <h1  >¿Quiénes Somos?</h1>
 
-                    <Col xs={12} md={12} xl={6} ref={infoRef}>
-                        <h1  >¿Quiénes Somos?</h1>
-                        <h3>Somos una distribuidora de productos veterinarios</h3>
-                        <p className='info'>Ventas de insumos para chicos y medianos animales.Contamos con más de diez laboratorios de <span >alta confianza</span>. Realizamos envíos a todo el país.
-                            <br />Contamos con Pipetas, comprimidos, ecthol , shampoo, alimento. ¡Chequea nuestro catálogo o mandamos un mensaje!</p>
+                    <Col xs={12} md={12} xl={6} ref={infoRef} >
+                        <h2>Somos una distribuidora de productos veterinarios</h2>
+                        <p className='info'>Nos dedicamos a la comercialización de insumos veterinarios para pequeños y medianos animales.Contamos con más de diez laboratorios de
+                            <span > alta confianza</span> <CheckCircleFill size={25} color="#124C5F" />.
+                            <br/> para poder proveer a distintos negocios como pet shop y veterinarias del país, entre otros.
+                            <br /> Realizamos envíos a todo el país.
+                            <br />Chequea nuestro catálogo o mandamos un mensaje!</p>
 
                         <div className='about_buttons'>
                             <button className='btn myBtn' >
@@ -90,9 +90,10 @@ export default function About() {
 
                             </button>
                         </div>
+
                     </Col>
                     <Col xs={12} md={12} xl={6} >
-                        <Carousel className='slider' dynamicHeight={true} width="80%" infiniteLoop={true} showThumbs={false} autoPlay showStatus={false} >
+                        <Carousel className='slider' dynamicHeight={true} infiniteLoop={true} showThumbs={false} autoPlay showStatus={false} >
                             <div className='item'>
                                 <img src={comida} alt="" />
                                 <span>Alimentos</span>
@@ -109,7 +110,7 @@ export default function About() {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     )
 }
 

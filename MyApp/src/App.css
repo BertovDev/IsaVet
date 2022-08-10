@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background: rgb(0 100 0 / 0.1) !important; */
+  /* outline: 1px solid limegreen !important; */
 }
 
 html,body
@@ -40,12 +42,12 @@ h6 {
 
 /* HOME */
 .banner {
-  aspect-ratio: 960/550;
+  aspect-ratio: 960/400;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("/static/stacked-waves-haikei.png");
   background-size: cover;
-  background-image: url("../static/Vector1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   visibility: hidden;
 
 }
@@ -106,12 +108,11 @@ h6 {
 .aboutSection {
   aspect-ratio: 960/400;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: 215px -1px;
-  background-image: url("../static/Vector.png");
-  /* background-size:70%; */
-  background-size: contain;
   visibility: hidden;
+  background: url("/static/wave-haikei.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -124,10 +125,13 @@ h6 {
   display: block;
 }
 
+.aboutSection h2 {
+  color: #124C5F;
+}
 
 .aboutSection p {
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 23px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -135,9 +139,10 @@ h6 {
 
 .info span {
   color:#124C5F;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-style: italic;
+  
 }
 
 .myBtn {
@@ -180,9 +185,9 @@ h6 {
   aspect-ratio: 960/400;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
-  background-image: url("../static/wave.png");
+  background-image: url("../static/bottombackground.png");
 
 }
 
@@ -202,6 +207,7 @@ h6 {
 
 @media (max-width:600px) {
 
+
   html {
     -webkit-transform:translateZ(0);
     transform:translateZ(0)
@@ -211,13 +217,25 @@ h6 {
     overflow-x: hidden;
   }
 
+  .banner {
+    text-align: center;
+  }
+
+  .banner img {
+    margin-left: 1.5rem;
+  }
+
   .aboutSection {
-    background-position: 0px 100px;
-    width: 110%;
+    visibility: hidden;
+    background-position:top;
   }
 
   .aboutSection p {
     font-size: 1rem;
+  }
+
+  .slider {
+    margin-right: 1.8rem;
   }
 
   .info span {
@@ -246,5 +264,10 @@ h6 {
 
   .slider {
     margin-left: 3rem;
+  }
+
+
+  .contactSection {
+    background: none;
   }
 }
